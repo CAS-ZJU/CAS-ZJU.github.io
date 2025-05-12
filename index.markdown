@@ -4,3 +4,7 @@
 
 layout: home
 ---
+
+[Tinkering Against Scaling](https://arxiv.org/abs/2504.16546)
+
+

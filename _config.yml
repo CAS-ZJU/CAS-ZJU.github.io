@@ -18,12 +18,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@example.com
+title: Critical Algorithms Studies Cluster at Zhejiang University
+email: casszju@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  This is the website for the Critical Algorithms Studies Cluster at Zhejiang University. We are a mingling of critical researchers and computational social scientists, aiming at understanding the social implications of algorithms and data science, and making meaningful intervention. We are based at the Department of Sociology, Zhejiang University, Hangzhou, China, and also involve other scholars from other disciplines and institutions.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
