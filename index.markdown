@@ -35,5 +35,5 @@ description: A research cluster at Zhejiang University, bringing critical inquir
 
 <div class="home-grid">
   <article><p class="eyebrow">Research</p><h2><a href="{{ '/works/' | relative_url }}">Selected works</a></h2><p>AI labor, algorithmic knowledge, model validation, and the social lives of data.</p><a class="text-link" href="{{ '/works/' | relative_url }}">Explore the research →</a></article>
-  <article><p class="eyebrow">Conversations</p><h2><a href="{{ '/events/' | relative_url }}">Events &amp; meetups</a></h2><p>A poster archive of our reading meetups, invited talks, workshops, and wider conversations.</p><a class="text-link" href="{{ '/events/' | relative_url }}">Browse the posters →</a></article>
+  <article><p class="eyebrow">Conversations</p><h2><a href="{{ '/events/' | relative_url }}">Events &amp; meetups</a></h2><p>A poster archive of our reading meetups, invited talks, workshops, and wider conversations.</p><a class="text-link" href="{{ '/events/' | relative_url }}">Browse the posters →</a><p class="home-archive-link"><a class="text-link" href="{{ '/events/#campus-thomasson-archive' | relative_url }}">Campus fieldwork: Thomasson Archive →</a></p></article>
 </div>

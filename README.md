@@ -24,12 +24,15 @@ bundle exec al-folio upgrade audit
 
 - `_people/*.md`: names, biographies, research interests, external profiles, and portrait paths and source credits. `person_id` connects each researcher to selected works.
 - `assets/images/people/`: locally stored researcher portraits. `docs/portrait-sources.md` records the verified profile and original image URLs. Photo credits also appear on each profile page.
-- `_data/works.yml`: selected publications, bibliographic details, member IDs, publication type, and relevance to the cluster. `_data/work_themes.yml` defines the page sections.
+- `_data/works.yml`: selected publications, bibliographic details, member IDs, publication type, and relevance to the cluster. `_data/work_themes.yml` defines the page sections. Works use compact al-folio bibliography rows, descending years within each theme, live filtering, expandable selection notes, and BibTeX generated from the recorded metadata.
+- `_data/event_archives.yml`: past activities with external digital archives, including a credited local preview image.
 - `_data/events.yml`: event titles, dates as printed, original images, and previews. The five requested meetup posters use `series: meetup`.
 - `resources/posters/`: untouched full-resolution originals. `assets/images/posters/` contains WebP previews, displayed without cropping. Clicking a preview opens al-folio's gallery; the separate “Open poster” link opens the original file.
 - Navigation is controlled by `nav: true` and `nav_order` in the front matter of the five main pages.
 - `_sass/_cluster.scss`: site-owned people, works, and event components, using al-folio's color tokens for both themes. `assets/css/main.scss` retains the core imports and adds this partial. `.al-folio-overrides.yml` records that intentional override for future upgrades.
 - `docs/research-notes.md`: publication screening scope, sources, and uncertainties. The original member resource remains in `resources/person/persons.md`.
+
+`_plugins/publication_filters.rb` formats publication badges, member profile links, search text, and BibTeX. `_sass/_works.scss` and `assets/js/works.js` control the Works page presentation and interactions.
 
 `_plugins/style_cache.rb` includes local Sass in the stylesheet fingerprint so styling updates refresh browser caches.
 

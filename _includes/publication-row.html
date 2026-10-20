@@ -1,0 +1,21 @@
+<article class="work-card publication-entry" id="{{ include.work.id }}" data-publication data-search="{{ include.work | publication_search_text | escape }}">
+  <div class="abbr publication-badge"><abbr title="{{ include.work.venue | escape }}">{{ include.work | publication_badge | escape }}</abbr></div>
+  <div class="publication-body">
+    <h4 class="title"><a href="{{ include.work.url }}">{{ include.work.title | escape }}</a></h4>
+    <div class="author">{{ include.work | publication_authors }}</div>
+    <div class="periodical"><cite>{{ include.work.venue | escape }}</cite>{% if include.work.details %}, {{ include.work.details | escape }}{% endif %} · {{ include.work.year }}{% if include.work.type == 'Preprint' %} <span class="publication-status">Preprint</span>{% elsif include.work.type == 'Research essay' %} <span class="publication-status">Research essay</span>{% endif %}</div>
+    <div class="links publication-actions">
+      {% if include.work.url contains 'https://doi.org/' %}<a class="publication-action" href="{{ include.work.url }}" aria-label="DOI for {{ include.work.title | escape }}">DOI</a>{% elsif include.work.type == 'Preprint' %}<a class="publication-action" href="{{ include.work.url }}" aria-label="arXiv page for {{ include.work.title | escape }}">arXiv</a>{% else %}<a class="publication-action" href="{{ include.work.url }}" aria-label="Publication page for {{ include.work.title | escape }}">{% if include.work.type == 'Book' %}Book{% else %}HTML{% endif %}</a>{% endif %}
+      {% if include.work.url contains 'https://arxiv.org/abs/' %}<a class="publication-action" href="{{ include.work.url | replace: '/abs/', '/pdf/' }}" aria-label="PDF of {{ include.work.title | escape }}">PDF</a>{% endif %}
+      <button class="publication-action" type="button" data-publication-toggle aria-expanded="false" aria-controls="{{ include.work.id }}-relevance">Why selected</button>
+      <button class="publication-action" type="button" data-publication-toggle aria-expanded="false" aria-controls="{{ include.work.id }}-bibtex">Bib</button>
+    </div>
+    <div class="publication-panel" id="{{ include.work.id }}-relevance" hidden>
+      <p>{{ include.work.relevance | escape }}</p>
+      <p class="publication-method">{{ include.work.genre | escape }}</p>
+    </div>
+    <div class="publication-panel publication-bibtex" id="{{ include.work.id }}-bibtex" hidden>
+      <pre><code>{{ include.work | publication_bibtex | escape }}</code></pre>
+    </div>
+  </div>
+</article>

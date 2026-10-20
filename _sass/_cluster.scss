@@ -1,3 +1,5 @@
+@use "works";
+
 /* Cluster components inherit al-folio's typography and light/dark tokens. */
 a:focus-visible, button:focus-visible { outline: 2px solid var(--global-theme-color); outline-offset: 4px; }
 .page-intro { font-size: 1.15rem; line-height: 1.75; max-width: 850px; }
@@ -92,4 +94,15 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--global-theme-co
   .home-intro { grid-template-columns: 1fr; gap: 0; }
   .home-intro .cluster-hero { margin-bottom: 1rem; }
   .home-meetup { max-width: 380px; margin: 1.5rem 0 1rem; }
+}
+
+.event-archive-feature { display: grid; grid-template-columns: 270px minmax(0, 1fr); gap: 2.5rem; align-items: center; margin: 1.5rem 0 3rem; }
+.event-archive-feature figure { margin: 0; min-width: 0; }
+.event-archive-feature img { display: block; width: 100%; height: auto; border-radius: 4px; }
+.event-archive-feature figcaption { margin-top: .65rem; font-size: .8rem; color: var(--global-text-color-light); }
+.archive-title-zh { font-size: 1.35rem; line-height: 1.5; margin-bottom: 1rem; }
+.home-archive-link { margin-top: 1rem; }
+@media (max-width: 700px) {
+  .event-archive-feature { grid-template-columns: 1fr; gap: 1.5rem; }
+  .event-archive-feature figure { max-width: 320px; }
 }
