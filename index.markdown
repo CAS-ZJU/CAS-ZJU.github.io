@@ -1,10 +1,25 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
-layout: home
+layout: single
+title: Critical Algorithms Studies
+excerpt: A research cluster at Zhejiang University, bringing critical inquiry and computational social science into conversation.
+classes: wide cluster-home
 ---
 
-[Tinkering Against Scaling](https://arxiv.org/abs/2504.16546)
+<div class="cluster-hero">
+  <p class="eyebrow">Zhejiang University / Department of Sociology</p>
+  <p class="hero-statement">Understanding algorithms.<br>Questioning their worlds.</p>
+  <p class="page-intro">We bring critical researchers and computational social scientists together to understand the social implications of algorithms and data science, and to make meaningful interventions.</p>
+  <div class="hero-actions">
+    <a class="btn btn--primary" href="{{ '/manifesto/' | relative_url }}">Read our manifesto <span aria-hidden="true">↗</span></a>
+    <a class="text-link" href="{{ '/people/' | relative_url }}">Meet the people →</a>
+  </div>
+</div>
 
+<div class="section-heading"><div><p class="eyebrow">A shared starting point</p><h2>Tinkering Against Scaling</h2></div><span class="section-index" aria-hidden="true">01</span></div>
+<p>How can we engage with algorithms when the largest models and their infrastructures remain out of reach? Our collective manifesto proposes tinkering as a practice of making, knowing, and caring.</p>
+<p><a class="text-link" href="https://arxiv.org/abs/2504.16546">Read the 2025 preprint ↗</a></p>
 
+<div class="home-grid">
+  <article><p class="eyebrow">Research</p><h2><a href="{{ '/works/' | relative_url }}">Selected works</a></h2><p>AI labor, algorithmic knowledge, model validation, and the social lives of data.</p><a class="text-link" href="{{ '/works/' | relative_url }}">Explore the research →</a></article>
+  <article><p class="eyebrow">Conversations</p><h2><a href="{{ '/events/' | relative_url }}">Events &amp; meetups</a></h2><p>A poster archive of our reading meetups, invited talks, workshops, and wider conversations.</p><a class="text-link" href="{{ '/events/' | relative_url }}">Browse the posters →</a></article>
+</div>

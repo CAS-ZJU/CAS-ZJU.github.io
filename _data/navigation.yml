@@ -1,0 +1,11 @@
+main:
+  - title: People
+    url: /people/
+  - title: Works
+    url: /works/
+  - title: Events
+    url: /events/
+  - title: Manifesto
+    url: /manifesto/
+  - title: About
+    url: /about/

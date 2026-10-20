@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title:  "Welcome to CAS ZJU"
 date:   2025-04-25 16:22:35 +0800
 categories: general update

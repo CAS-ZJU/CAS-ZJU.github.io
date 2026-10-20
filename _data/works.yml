@@ -1,0 +1,309 @@
+- id: tinkering-against-scaling
+  title: Tinkering Against Scaling
+  authors: Bolun Zhang, Yang Shen, Linzhuo Li, Yu Ji, Di Wu, Tongyu Wu, and Lianghao Dai
+  year: 2025
+  type: Preprint
+  venue: arXiv
+  details: '2504.16546'
+  url: https://arxiv.org/abs/2504.16546
+  members:
+  - yang-shen
+  - tongyu-wu
+  - linzhuo-li
+  - bolun-zhang
+  - di-wu
+  - lianghao-dai
+  theme: critical-practice
+  relevance: Our collective manifesto on tinkering as making, knowing, and caring.
+  evidence: Abstract
+  genre: Conceptual / manifesto
+- id: assembling-topic-models
+  title: 'Assembling Topic Models: Material Political Economy and the Genealogy of an Algorithm'
+  authors: Bolun Zhang
+  year: 2026
+  type: Journal article
+  venue: Social Studies of Science
+  details: OnlineFirst, September 9
+  url: https://doi.org/10.1177/03063127261469570
+  members:
+  - bolun-zhang
+  theme: critical-practice
+  relevance: Traces how institutional settings and political economy shape the meaning and evaluation
+    of NLP algorithms.
+  evidence: Abstract
+  genre: Historical / conceptual
+- id: computation-four-traditions
+  title: 计算社会科学中的“计算”多义性：对四种传统的探析
+  authors: 张博伦、周浥莽
+  year: 2026
+  type: Journal article
+  venue: 社会学评论
+  details: '14(2): 5–31'
+  url: https://src.ruc.edu.cn/CN/Y2026/V14/I2/5
+  members:
+  - bolun-zhang
+  theme: critical-practice
+  relevance: Distinguishes four traditions of computational social science and asks how computational
+    approaches relate to sociological inquiry.
+  evidence: Abstract
+  genre: Conceptual / methodological review
+- id: llm-value-shifts
+  title: Large language models as a conduit for value shifts in contemporary China
+  authors: Likun Cao and Lianghao Dai
+  year: 2026
+  type: Journal article
+  venue: Chinese Sociological Review
+  details: 'Published online April 24: 1–32'
+  url: https://doi.org/10.1080/21620555.2026.2656193
+  members:
+  - lianghao-dai
+  theme: models-society
+  relevance: Treats AI systems as carriers of cultural assumptions and investigates their relationship
+    to users’ social and moral values.
+  evidence: Abstract
+  genre: Quantitative / experimental
+- id: prestige-experience-ai
+  title: The diverging effect of prestige and experience on the use of artificial intelligence knowledge
+  authors: Nannan Zhao and Linzhuo Li
+  year: 2026
+  type: Journal article
+  venue: Journal of the Association for Information Science and Technology
+  details: '77(4): 580–595'
+  url: https://doi.org/10.1002/asi.70068
+  members:
+  - linzhuo-li
+  theme: models-society
+  relevance: Investigates how scientific status and experience relate to the AI knowledge researchers
+    use, linking AI adoption to the social organization of science.
+  evidence: Abstract
+  genre: Quantitative / bibliometric
+- id: space-time-game
+  title: 'The space-time game: Workers with disabilities in China’s AI data labeling industry'
+  authors: Bingqing Xia and Tongyu Wu
+  year: 2026
+  type: Journal article
+  venue: New Media & Society
+  details: '28(5): 2058–2078; first online February 27, 2025'
+  url: https://doi.org/10.1177/14614448251320114
+  members:
+  - tongyu-wu
+  theme: labor
+  relevance: Examines how workers with disabilities negotiate the spatial and temporal demands of AI data
+    labeling, foregrounding agency within digital labor.
+  evidence: Abstract
+  genre: Qualitative / ethnographic
+- id: human-values-agent-communities
+  title: 'Human Values Matter: Investigating How Misalignment Shapes Collective Behaviors in LLM Agent
+    Communities'
+  authors: Xiangxu Zhang, Jiamin Wang, Qinlin Zhao, Hanze Guo, Linzhuo Li, Jing Yao, Xiao Zhou, Xiaoyuan
+    Yi, and Xing Xie
+  year: 2026
+  type: Preprint
+  venue: arXiv
+  details: '2604.05339'
+  url: https://arxiv.org/abs/2604.05339
+  members:
+  - linzhuo-li
+  theme: models-society
+  relevance: Studies how value alignment shapes collective behavior in simulated language-model communities,
+    linking AI evaluation to social-science questions.
+  evidence: Abstract
+  genre: Computational / simulation
+- id: human-reading-topic-model
+  title: Can Human Reading Validate a Topic Model?
+  authors: Bolun Zhang, Yimang Zhou, and Dai Li
+  year: 2025
+  type: Journal article
+  venue: Sociological Methodology
+  details: '55(1): 59–90; first online July 25, 2024'
+  url: https://doi.org/10.1177/00811750241265336
+  members:
+  - bolun-zhang
+  theme: critical-practice
+  relevance: Questions whether human interpretation alone validates algorithmic measurements, and proposes
+    checking consistency across semantically similar topic models.
+  evidence: Full text
+  genre: Methodological
+- id: platformisation-tree
+  title: The platformisation tree in China’s AI data annotation ecosystem
+  authors: Bingqing Xia and Tongyu Wu
+  year: 2025
+  type: Journal article
+  venue: Big Data & Society
+  details: 12(4), article 20539517251386046
+  url: https://doi.org/10.1177/20539517251386046
+  members:
+  - tongyu-wu
+  theme: labor
+  relevance: Examines how governments, technology capital, and disabled people’s organizations shape data
+    annotators’ work and inclusion.
+  evidence: Full text
+  genre: Qualitative / ethnographic
+- id: global-data-empires
+  title: 'Global data empires: Analysing artificial intelligence data annotation in China and the USA'
+  authors: Tongyu Wu, James Muldoon, and Bingqing Xia
+  year: 2025
+  type: Journal article
+  venue: Big Data & Society
+  details: 12(2), article 20539517251340600
+  url: https://doi.org/10.1177/20539517251340600
+  members:
+  - tongyu-wu
+  theme: labor
+  relevance: Connects AI development to the organization of data work and the different infrastructures
+    sustaining annotation in China and the United States.
+  evidence: Full text
+  genre: Comparative / qualitative
+- id: silicon-samples
+  title: 'ChatGPT is not A Man but Das Man: Representativeness and Structural Consistency of Silicon Samples
+    Generated by Large Language Models'
+  authors: Dai Li, Linzhuo Li, and Huilian Sophie Qiu
+  year: 2025
+  type: Preprint
+  venue: arXiv
+  details: '2507.02919'
+  url: https://arxiv.org/abs/2507.02919
+  members:
+  - linzhuo-li
+  theme: models-society
+  relevance: Tests whether model-generated opinions preserve population diversity and demographic structure,
+    questioning their use as substitutes for human surveys.
+  evidence: Abstract
+  genre: Quantitative / methodological
+- id: annotation-reliability
+  title: 'Architectural Vulnerability and Reliability Challenges in AI Text Annotation: A Survey-Inspired
+    Framework with Independent Probability Assessment'
+  authors: Linzhuo Li
+  year: 2025
+  type: Preprint
+  venue: arXiv
+  details: 2502.19679, version 4
+  url: https://arxiv.org/abs/2502.19679
+  members:
+  - linzhuo-li
+  theme: models-society
+  relevance: Uses survey-inspired checks to examine order sensitivity and the reliability of language-model
+    annotations in social research.
+  evidence: Abstract
+  genre: Quantitative / methodological
+- id: worker-agency-data-labeling
+  title: 數字勞動框架下的平台勞工能動性——以人工智能數據標註勞動為例
+  authors: 夏冰青、吳桐雨
+  year: 2025
+  type: Journal article
+  venue: 傳播與社會學刊
+  details: '71: 121–150'
+  url: https://doi.org/10.30180/CS.202501_(71).0006
+  members:
+  - tongyu-wu
+  theme: labor
+  relevance: Explores precarious work, subjectivity, and solidarity among disabled data annotators, including
+    the mediating role of their organizations.
+  evidence: Publisher abstract / preview
+  genre: Qualitative / ethnographic
+- id: knowing-uncertainty
+  title: Knowing Your Uncertainty — On the application of LLM in social sciences
+  authors: Bolun Zhang, Linzhuo Li, Yunqi Chen, Qinlin Zhao, Zihan Zhu, Xiaoyuan Yi, and Xing Xie
+  year: 2025
+  type: Preprint
+  venue: arXiv
+  details: 2512.05461; version 2 revised September 6, 2026
+  url: https://arxiv.org/abs/2512.05461
+  members:
+  - bolun-zhang
+  - linzhuo-li
+  theme: models-society
+  relevance: Develops a framework for assessing variation and uncertainty in language-model outputs, connecting
+    model use to established standards of social inquiry.
+  evidence: Abstract
+  genre: Methodological
+- id: play-to-submission
+  title: 'Play to Submission: Gaming Capitalism in a Tech Firm'
+  authors: Tongyu Wu
+  year: 2024
+  type: Book
+  venue: Temple University Press
+  details: June 2024
+  url: https://tupress.temple.edu/books/play-to-submission
+  members:
+  - tongyu-wu
+  theme: labor
+  relevance: Studies gamification and labor control among software engineers, connecting the production
+    of digital technologies to workplace power.
+  evidence: Publisher description
+  genre: Ethnographic monograph
+- id: machine-learning-closure
+  title: 警惕机器学习走向封闭
+  authors: 张博伦
+  year: 2024
+  type: Research essay
+  venue: 清华社会学评论
+  details: '第22辑; publisher record: 251–267'
+  url: https://sociology.ssap.com.cn/skwx_shx/LiteratureDetail.aspx?ID=1343036
+  members:
+  - bolun-zhang
+  theme: critical-practice
+  relevance: Examines the retreat from open knowledge infrastructures in machine learning and the growing
+    infrastructural power of technology companies.
+  evidence: Publisher abstract and contents
+  genre: Conceptual / political economy
+- id: llm-topic-labeling
+  title: 大语言模型能用来给主题模型中的主题编码吗？——兼论大语言模型在社会科学领域应用的前景
+  authors: 李代、张博伦、周浥莽
+  year: 2024
+  type: Journal article
+  venue: 智能社会研究
+  details: '3(1): 33–59'
+  url: https://jis.hrbeu.edu.cn/issue/18.html
+  members:
+  - bolun-zhang
+  theme: models-society
+  relevance: Evaluates language-model labels for topic models, connecting practical experimentation with
+    questions about expertise and validation in social research.
+  evidence: Journal abstract and issue contents
+  genre: Quantitative / methodological
+- id: computing-manipulating
+  title: 计算与算计：数据标注劳动中的算法补足组织
+  authors: 吴桐雨、夏冰青
+  year: 2023
+  type: Journal article
+  venue: 社会学评论
+  details: '11(6): 66–86'
+  url: https://src.ruc.edu.cn/CN/Y2023/V11/I6/66
+  members:
+  - tongyu-wu
+  theme: labor
+  relevance: Examines how organizations mediate algorithmic control and re-embed AI data-labeling labor
+    in social relations.
+  evidence: Abstract
+  genre: Qualitative / ethnographic
+- id: chromium-logistical-power
+  title: 'Chromium as a tool of logistical power: A material political economy of open-source'
+  authors: Bolun Zhang and Davide Carpano
+  year: 2023
+  type: Journal article
+  venue: Big Data & Society
+  details: 10(1), article 20539517231182399
+  url: https://doi.org/10.1177/20539517231182399
+  members:
+  - bolun-zhang
+  theme: critical-practice
+  relevance: Examines how open-source software can become an infrastructure of corporate power, connecting
+    technical dependencies to political economy.
+  evidence: Full text
+  genre: Qualitative / political economy
+- id: beyond-black-box
+  title: 超越算法的黑箱想象
+  authors: 张博伦
+  year: 2022
+  type: Research essay
+  venue: 清华社会学评论
+  details: '第18辑: 146–165'
+  url: https://sociologyol.ruc.edu.cn/shxyj/fzshx/wlshx/26707523aefa476f9357333de5278fc5.htm
+  members:
+  - bolun-zhang
+  theme: critical-practice
+  relevance: Argues for studying algorithmic systems as organizational phenomena, extending critical inquiry
+    beyond attempts to open the technical black box.
+  evidence: Abstract and author bibliography
+  genre: Conceptual

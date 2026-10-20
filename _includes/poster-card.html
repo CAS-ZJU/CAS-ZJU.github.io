@@ -1,0 +1,11 @@
+<figure class="poster-card">
+  <a class="poster-link" href="{{ include.event.original | relative_url | uri_escape }}" aria-label="Open original poster: {{ include.event.title | escape }}">
+    <img src="{{ include.event.thumbnail | relative_url }}" alt="Event poster: {{ include.event.title | escape }}" width="{{ include.event.width }}" height="{{ include.event.height }}" loading="lazy" decoding="async">
+  </a>
+  <figcaption>
+    {% if include.event.date_label %}<p class="eyebrow">{{ include.event.date_label | escape }}</p>{% endif %}
+    <h3>{{ include.event.title | escape }}</h3>
+    {% if include.event.speaker %}<p class="poster-speaker">{{ include.event.speaker | escape }}</p>{% endif %}
+    <a class="text-link" href="{{ include.event.original | relative_url | uri_escape }}">Open poster <span aria-hidden="true">↗</span></a>
+  </figcaption>
+</figure>

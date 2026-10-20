@@ -1,18 +1,9 @@
 ---
-layout: page
+layout: single
 title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+## Who are we?
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+This is the website for the Critical Algorithms Studies Cluster at Zhejiang University. We are a mingling of critical researchers and computational social scientists, aiming at understanding the social implications of algorithms and data science, and making meaningful intervention. We are based at the Department of Sociology, Zhejiang University, Hangzhou, China, and also involve other scholars from other disciplines and institutions.

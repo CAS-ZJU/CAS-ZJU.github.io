@@ -1,0 +1,8 @@
+<article class="work-card" id="{{ include.work.id }}">
+  <p class="eyebrow">{{ include.work.year }} <span aria-hidden="true">/</span> {{ include.work.type }}</p>
+  <h3><a href="{{ include.work.url }}">{{ include.work.title | escape }}</a></h3>
+  <p class="work-authors">{{ include.work.authors | escape }}</p>
+  <p class="work-venue"><cite>{{ include.work.venue | escape }}</cite>{% if include.work.details %}, {{ include.work.details | escape }}{% endif %}.</p>
+  <p class="work-relevance">{{ include.work.relevance | escape }}</p>
+  <a class="text-link" href="{{ include.work.url }}">{% if include.work.type == 'Preprint' %}Read preprint{% elsif include.work.type == 'Book' %}View book{% else %}View publication{% endif %} <span aria-hidden="true">↗</span></a>
+</article>

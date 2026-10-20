@@ -1,0 +1,16 @@
+---
+layout: single
+---
+<p class="eyebrow">{{ page.chinese_name }} <span aria-hidden="true">/</span> Zhejiang University</p>
+<p class="page-intro">{{ page.summary }}</p>
+<ul class="topic-list" aria-label="Research interests">{% for topic in page.topics %}<li>{{ topic }}</li>{% endfor %}</ul>
+{{ content }}
+<nav class="profile-links" aria-label="External profiles">
+  <a class="btn btn--primary" href="{{ page.faculty_url }}">ZJU faculty profile <span aria-hidden="true">↗</span></a>
+  {% if page.website %}<a class="btn btn--inverse" href="{{ page.website }}">Personal website <span aria-hidden="true">↗</span></a>{% endif %}
+</nav>
+<h2>Selected work with the cluster</h2>
+<div class="works-list">
+  {% for work in site.data.works %}{% if work.members contains page.person_id %}{% include work-card.html work=work %}{% endif %}{% endfor %}
+</div>
+<p><a href="{{ '/people/' | relative_url }}">← All people</a> <span aria-hidden="true">·</span> <a href="{{ '/works/' | relative_url }}">Explore all selected works</a></p>
