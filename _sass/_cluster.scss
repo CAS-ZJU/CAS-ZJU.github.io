@@ -79,3 +79,17 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--global-theme-co
 }
 
 }
+
+.home-intro { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 3rem; align-items: start; }
+.home-meetup { margin-top: 2rem; min-width: 0; }
+.home-meetup h2 { font-size: 1.25rem; line-height: 1.4; margin: 0 0 1rem; }
+.home-meetup .poster-link img { aspect-ratio: auto; }
+.meetup-links { display: flex; flex-wrap: wrap; gap: .5rem 1rem; margin: .85rem 0 0; }
+@media (max-width: 900px) {
+  .home-intro { grid-template-columns: minmax(0, 1fr) 260px; gap: 2rem; }
+}
+@media (max-width: 700px) {
+  .home-intro { grid-template-columns: 1fr; gap: 0; }
+  .home-intro .cluster-hero { margin-bottom: 1rem; }
+  .home-meetup { max-width: 380px; margin: 1.5rem 0 1rem; }
+}
