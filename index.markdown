@@ -2,13 +2,12 @@
 layout: about
 title: Home
 permalink: /
-subtitle: Critical Algorithms Studies Cluster · Zhejiang University
 description: A research cluster at Zhejiang University, bringing critical inquiry and computational social science into conversation.
 ---
 
 <div class="cluster-hero">
   <p class="eyebrow">Zhejiang University / Department of Sociology</p>
-  <p class="hero-statement">Critical Algorithms Studies</p>
+  <p class="hero-statement">Critical Algorithms Studies Cluster</p>
   <p class="page-intro">We bring critical researchers and computational social scientists together to understand the social implications of algorithms and data science, and to make meaningful interventions.</p>
   <div class="hero-actions">
     <a class="cluster-button" href="{{ '/manifesto/' | relative_url }}">Read our manifesto <span aria-hidden="true">↗</span></a>
@@ -16,7 +15,7 @@ description: A research cluster at Zhejiang University, bringing critical inquir
   </div>
 </div>
 
-<div class="section-heading"><div><p class="eyebrow">A shared starting point</p><h2>Tinkering Against Scaling</h2></div><span class="section-index" aria-hidden="true">01</span></div>
+<div class="section-heading"><div><p class="eyebrow">Our shared starting point</p><h2>Tinkering Against Scaling</h2></div><span class="section-index" aria-hidden="true">01</span></div>
 <p>How can we engage with algorithms when the largest models and their infrastructures remain out of reach? Our collective manifesto proposes tinkering as a practice of making, knowing, and caring.</p>
 <p><a class="text-link" href="https://arxiv.org/abs/2504.16546">Read the 2025 preprint ↗</a></p>
 
