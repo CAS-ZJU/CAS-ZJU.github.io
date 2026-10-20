@@ -64,12 +64,21 @@ def main():
     assert meetup_html.count('class="poster-card"') == 5, "Expected exactly five meetup posters."
     for name in ("064521_521.jpg", "064315_407.jpg", "063803_231.jpg", "063623_438.jpg", "064050_625.jpg"):
         assert name in meetup_html, f"Missing requested series poster {name}"
-    assert pages[(SITE / "people/index.html").resolve()].classes.count("person-card") == 6
+    people = pages[(SITE / "people/index.html").resolve()]
+    assert people.classes.count("person-card") == 6
+    portraits = [img for img in people.images if "person-portrait" in img.get("class", "").split()]
+    assert len(portraits) == 6, "Expected a portrait for each researcher."
+    assert len({img["src"] for img in portraits}) == 6, "Each researcher should have their own portrait."
+    for profile in (SITE / "people").glob("*/index.html"):
+        detail = pages[profile.resolve()]
+        assert "profile-portrait" in detail.classes, f"Missing profile portrait: {profile}"
+        assert any(img.get("src") in {portrait["src"] for portrait in portraits} for img in detail.images)
+        assert "Photo source:" in profile.read_text(), f"Missing photo source: {profile}"
     assert len(list((SITE / "people").glob("*/index.html"))) == 6
     expected_works = sum(line.startswith("- id:") for line in (ROOT / "_data/works.yml").read_text().splitlines())
     assert pages[(SITE / "works/index.html").resolve()].classes.count("work-card") == expected_works
     assert not errors, "\n".join(errors)
-    print(f"Checked {len(pages)} HTML pages: internal links, fragments, image alternatives, six profiles, {expected_works} works, and all 24 posters (five in the meetup series).")
+    print(f"Checked {len(pages)} HTML pages: internal links, fragments, image alternatives, six profiles and portraits, {expected_works} works, and all 24 posters (five in the meetup series).")
 
 
 if __name__ == "__main__":

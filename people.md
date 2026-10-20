@@ -1,7 +1,9 @@
 ---
 title: People
 permalink: /people/
-excerpt: Critical inquiry, computational methods, and shared questions.
+description: Critical inquiry, computational methods, and shared questions.
+nav: true
+nav_order: 1
 ---
 
 <p class="page-intro">We work across sociology, anthropology, and computational social science. The cluster is based in the Department of Sociology at Zhejiang University and connects researchers across disciplines and institutions.</p>
@@ -10,7 +12,9 @@ excerpt: Critical inquiry, computational methods, and shared questions.
 {% assign people = site.people | sort: 'order' %}
 {% for person in people %}
   <article class="person-card">
-    <div class="person-monogram" aria-hidden="true">{{ person.initials }}</div>
+    <a class="portrait-link" href="{{ person.url | relative_url }}" tabindex="-1" aria-hidden="true">
+      <img class="person-portrait" src="{{ person.portrait | relative_url }}" alt="{{ person.title | escape }}" width="{{ person.portrait_width }}" height="{{ person.portrait_height }}" loading="lazy" decoding="async" style="object-position: {{ person.portrait_position | default: 'center 30%' }}">
+    </a>
     <p class="eyebrow">{{ person.chinese_name }}</p>
     <h2><a href="{{ person.url | relative_url }}">{{ person.title }}</a></h2>
     <p>{{ person.summary }}</p>

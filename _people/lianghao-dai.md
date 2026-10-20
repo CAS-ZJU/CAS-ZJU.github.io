@@ -11,6 +11,11 @@ topics:
 - Collaboration
 - AI & social values
 faculty_url: http://sociology.zju.edu.cn/index.php/Teacher/e_details.html?id=79&tid=19&sid=2
+portrait: /assets/images/people/lianghao-dai.jpg
+portrait_width: 370
+portrait_height: 510
+portrait_source: https://lingfeiwu.github.io/kss/
+portrait_source_label: KSS workshop profile
 ---
 
 His research connects the sociology of science with questions about knowledge sharing and AI. Recent work examines how large language models carry social and cultural assumptions into interactions with users.

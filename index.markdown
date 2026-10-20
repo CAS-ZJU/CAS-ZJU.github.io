@@ -1,16 +1,17 @@
 ---
-layout: single
-title: Critical Algorithms Studies
-excerpt: A research cluster at Zhejiang University, bringing critical inquiry and computational social science into conversation.
-classes: wide cluster-home
+layout: about
+title: Home
+permalink: /
+subtitle: Critical Algorithms Studies Cluster · Zhejiang University
+description: A research cluster at Zhejiang University, bringing critical inquiry and computational social science into conversation.
 ---
 
 <div class="cluster-hero">
   <p class="eyebrow">Zhejiang University / Department of Sociology</p>
-  <p class="hero-statement">Understanding algorithms.<br>Questioning their worlds.</p>
+  <p class="hero-statement">Critical Algorithms Studies</p>
   <p class="page-intro">We bring critical researchers and computational social scientists together to understand the social implications of algorithms and data science, and to make meaningful interventions.</p>
   <div class="hero-actions">
-    <a class="btn btn--primary" href="{{ '/manifesto/' | relative_url }}">Read our manifesto <span aria-hidden="true">↗</span></a>
+    <a class="cluster-button" href="{{ '/manifesto/' | relative_url }}">Read our manifesto <span aria-hidden="true">↗</span></a>
     <a class="text-link" href="{{ '/people/' | relative_url }}">Meet the people →</a>
   </div>
 </div>

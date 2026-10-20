@@ -1,11 +1,15 @@
 ---
 title: Events
 permalink: /events/
-excerpt: Reading together, thinking together, and opening up the algorithm.
+description: Reading together, thinking together, and opening up the algorithm.
+images:
+  lightbox2: true
+nav: true
+nav_order: 3
 ---
 
 <p class="page-intro">Talks, reading groups, and workshops bring our questions into conversation. Explore the posters from previous events and our wider intellectual community.</p>
-<nav class="section-nav" aria-label="Event collections"><a href="#meetup-series">Critical Algorithm Studies Meetup · 5 posters</a><a href="#event-archive">Talks &amp; workshops · 19 posters</a></nav>
+<nav class="section-nav" aria-label="Event collections"><a href="#meetup-series">Critical Algorithm Studies Meetups</a><a href="#event-archive">Talks &amp; workshops</a></nav>
 <p class="archive-note"></p>
 
 <section aria-labelledby="meetup-series">

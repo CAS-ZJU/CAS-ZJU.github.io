@@ -1,0 +1,81 @@
+/* Cluster components inherit al-folio's typography and light/dark tokens. */
+a:focus-visible, button:focus-visible { outline: 2px solid var(--global-theme-color); outline-offset: 4px; }
+.page-intro { font-size: 1.15rem; line-height: 1.75; max-width: 850px; }
+.eyebrow { color: var(--global-text-color-light); text-transform: uppercase; font-size: .75rem; font-weight: 500; letter-spacing: .08em; margin: 0 0 .5rem; }
+.eyebrow span { padding-inline: .4em; }
+.archive-note { color: var(--global-text-color-light); font-size: .9rem; max-width: 850px; }
+.text-link { font-size: .9rem; font-weight: 500; }
+.cluster-button { display: inline-block; border: 1px solid var(--global-theme-color); border-radius: 4px; padding: .6rem 1rem; background: var(--global-theme-color); color: var(--global-bg-color); font-size: .9rem; text-decoration: none; }
+.cluster-button:hover { color: var(--global-bg-color); opacity: .85; text-decoration: none; }
+.cluster-button.secondary { background: transparent; color: var(--global-theme-color); }
+.cluster-hero { margin: 2rem 0 3rem; max-width: 900px; }
+.hero-statement { font-size: clamp(2rem, 4.5vw, 3.25rem); font-weight: 300; line-height: 1.15; letter-spacing: -.025em; margin: 1rem 0 1.5rem; }
+.hero-actions, .profile-links { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem; margin: 1.5rem 0; }
+.section-heading { display: flex; align-items: end; justify-content: space-between; gap: 1rem; border-top: 1px solid var(--global-divider-color); margin: 2.5rem 0 1.5rem; padding-top: 1.75rem; }
+.section-heading h2 { margin: 0; font-size: 1.7rem; scroll-margin-top: 6rem; }
+.section-index { color: var(--global-theme-color); font-size: 2rem; font-weight: 300; }
+.home-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; border-top: 1px solid var(--global-divider-color); margin-top: 2.5rem; padding-top: 2rem; }
+.home-grid h2 { margin-top: 0; font-size: 1.6rem; }
+.section-nav { display: flex; flex-wrap: wrap; gap: .65rem; margin: 1.75rem 0; }
+.section-nav a { font-size: .9rem; padding: .5rem .8rem; border: 1px solid var(--global-divider-color); border-radius: 4px; }
+.section-nav a:hover { border-color: var(--global-theme-color); text-decoration: none; }
+.people-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2.75rem 2rem; margin-top: 2.5rem; }
+.person-card { display: flex; align-items: start; flex-direction: column; min-width: 0; }
+.portrait-link { display: block; width: 100%; margin-bottom: 1.25rem; }
+.person-portrait { display: block; width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; border-radius: 4px; background: var(--global-card-bg-color); }
+.person-card h2 { font-size: 1.55rem; margin: 0 0 .8rem; }
+.person-card p { font-size: .95rem; }
+.person-card > .text-link { margin-top: auto; }
+.topic-list { display: flex; flex-wrap: wrap; gap: .4rem; list-style: none; padding: 0; margin: 0 0 1.25rem; }
+.topic-list li { font-size: .75rem; line-height: 1.5; border: 1px solid var(--global-divider-color); border-radius: 3px; padding: .25rem .5rem; margin: 0; }
+.person-intro { display: grid; grid-template-columns: minmax(0, 1fr) 260px; gap: 3rem; margin-bottom: 3rem; align-items: start; }
+.profile-portrait { grid-column: 2; grid-row: 1; margin: 0; }
+.profile-portrait img { display: block; width: 100%; height: auto; border-radius: 4px; }
+.profile-portrait figcaption { font-size: .75rem; margin-top: .6rem; color: var(--global-text-color-light); }
+.person-bio { grid-column: 1; grid-row: 1; min-width: 0; }
+.works-list { margin: 1.5rem 0 3rem; }
+.work-card { padding: 1.5rem 0; border-bottom: 1px solid var(--global-divider-color); max-width: 940px; }
+.work-card:first-child { border-top: 1px solid var(--global-divider-color); }
+.work-card h3 { font-size: 1.25rem; font-weight: 500; margin: 0 0 .65rem; }
+.work-card p { margin-bottom: .55rem; }
+.work-card .work-venue { color: var(--global-text-color-light); font-size: .9rem; }
+.work-card .work-relevance { border-left: 2px solid var(--global-theme-color); padding-left: 1rem; margin: 1rem 0; }
+.poster-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2rem 1.5rem; margin: 2rem 0 3rem; }
+.poster-card { display: block; margin: 0; min-width: 0; }
+.poster-link { display: block; border: 1px solid var(--global-divider-color); border-radius: 4px; padding: .4rem; background: var(--global-card-bg-color); }
+.poster-link:hover { border-color: var(--global-theme-color); }
+.poster-link img { display: block; width: 100%; height: auto; aspect-ratio: .7; object-fit: contain; margin: 0; }
+.poster-card figcaption { margin-top: 1rem; }
+.poster-card h3 { font-size: 1rem; line-height: 1.5; font-weight: 500; margin: 0 0 .55rem; }
+.poster-speaker { color: var(--global-text-color-light); font-size: .85rem; margin-bottom: .6rem; }
+.poster-card .eyebrow { font-size: .7rem; }
+.meetup-grid { padding: 1.5rem; border: 1px solid var(--global-divider-color); border-top: 2px solid var(--global-theme-color); border-radius: 4px; }
+@media (max-width: 900px) {
+  .people-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .person-intro { grid-template-columns: minmax(0, 1fr) 210px; gap: 2rem; }
+}
+@media (max-width: 700px) {
+  .poster-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem 1rem; }
+  .meetup-grid { padding: 1rem; }
+  .home-grid { grid-template-columns: 1fr; gap: 2rem; }
+  .person-intro { display: flex; flex-direction: column; gap: 1.5rem; }
+  .profile-portrait { width: min(260px, 100%); }
+}
+@media (max-width: 480px) {
+  .people-grid, .poster-grid { grid-template-columns: 1fr; }
+  .person-portrait { aspect-ratio: 1.1; }
+  .poster-link img { aspect-ratio: auto; }
+}
+// Join the core component layer so these rules can override its important
+// collapse utilities. Keep the menu until all six links fit on one row.
+@layer components {
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #navbar .navbar-toggler-main { display: block; margin-left: auto; }
+  #navbar .navbar-collapse-main { display: none !important; flex-basis: 100%; width: 100%; text-align: left; }
+  #navbar .navbar-collapse-main.show { display: block !important; }
+  #navbar .navbar-menu-list { flex-direction: column; align-items: flex-start; width: 100%; margin-left: 0; }
+  #navbar .navbar-menu-list .nav-link { padding-inline: 0; }
+  #navbar #light-toggle { transform: none; }
+}
+
+}

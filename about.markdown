@@ -1,7 +1,9 @@
 ---
-layout: single
+layout: page
 title: About
 permalink: /about/
+nav: true
+nav_order: 5
 ---
 
 ## Who are we?

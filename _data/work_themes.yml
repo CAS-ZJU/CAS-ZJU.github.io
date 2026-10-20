@@ -1,8 +1,3 @@
-- id: critical-practice
-  label: Critical practice & algorithmic knowledge
-  kicker: Making and knowing
-  description: The institutions, histories, and methodological choices through which
-    algorithms become ways of knowing.
 - id: labor
   label: Labor & the AI economy
   kicker: Behind the model
@@ -13,3 +8,8 @@
   kicker: Values and validity
   description: What language models represent, what they leave out, and how we can
     study them responsibly.
+- id: critical-practice
+  label: Critical practice & algorithmic knowledge
+  kicker: Making and knowing
+  description: The institutions, histories, and methodological choices through which
+    algorithms become ways of knowing.

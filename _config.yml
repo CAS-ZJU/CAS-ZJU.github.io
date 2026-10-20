@@ -1,58 +1,108 @@
 title: CAS ZJU
-subtitle: Critical Algorithms Studies
-name: Critical Algorithms Studies Cluster
+first_name: Critical Algorithms Studies Cluster
+middle_name: ""
+last_name: ""
 email: casszju@gmail.com
 description: >-
   Critical researchers and computational social scientists studying the social
   implications of algorithms and data science at Zhejiang University.
+keywords: critical algorithms studies, computational social science, Zhejiang University
 url: "https://cas-zju.github.io"
 baseurl: ""
-locale: en-US
+lang: en
 timezone: Asia/Shanghai
 repository: CAS-ZJU/CAS-ZJU.github.io
+icon: ⚛️
 
-theme: minimal-mistakes-jekyll
-minimal_mistakes_skin: default
+# al-folio's released runtime; built by .github/workflows/pages.yml.
+theme: al_folio_core
 plugins:
-  - jekyll-include-cache
+  - jekyll-cache-bust
+  - al_folio_core
+  - al_icons
+  - al_img_tools
   - jekyll-feed
+  - jekyll-scholar
+  - jekyll-sitemap
+  - jekyll-socials
+  - jekyll-toc
+
+al_folio:
+  api_version: 1
+  style_engine: tailwind
+  tailwind:
+    version: 4.1.18
+    preflight: false
+    css_entry: assets/tailwind/app.css
+  distill:
+    engine: distillpub-template
+    source: al-org-dev/distill-template#al-folio
+    allow_remote_loader: false
+  features:
+    cv:
+      enabled: false
+    distill:
+      enabled: false
+  compat:
+    bootstrap:
+      enabled: false
+  upgrade:
+    channel: stable
+    auto_apply_safe_fixes: false
+
+navbar_fixed: true
+footer_fixed: false
+max_width: 1100px
+search_enabled: false
+enable_darkmode: true
+enable_navbar_social: false
+enable_masonry: false
+enable_medium_zoom: false
+enable_progressbar: false
+back_to_top: false
+serve_og_meta: true
+serve_schema_org: false
+newsletter:
+  enabled: false
+footer_text: >-
+  <a href="mailto:casszju@gmail.com">Email</a> ·
+  <a href="https://github.com/CAS-ZJU">GitHub</a> ·
+  Powered by <a href="https://jekyllrb.com/">Jekyll</a> and
+  <a href="https://github.com/alshedivat/al-folio">al-folio</a>.
+third_party_libraries:
+  fontawesome:
+    url:
+      css: "https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css"
+    integrity:
+      css: "sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c="
+  google_fonts:
+    url:
+      fonts: "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap"
 
 markdown: kramdown
 permalink: /news/:year/:month/:day/:title/
+sass:
+  style: compressed
 collections:
   people:
     output: true
     permalink: /people/:name/
-
 defaults:
   - scope:
       path: ""
     values:
-      layout: single
-      classes: wide
-      author_profile: false
-      share: false
-      related: false
+      layout: page
+      nav: false
   - scope:
       path: ""
       type: people
     values:
       layout: person
-      classes: wide
   - scope:
       path: ""
       type: posts
     values:
-      layout: single
-
-footer:
-  links:
-    - label: Email
-      icon: fas fa-envelope
-      url: mailto:casszju@gmail.com
-    - label: GitHub
-      icon: fab fa-github
-      url: https://github.com/CAS-ZJU
+      layout: post
 
 exclude:
   - Gemfile
@@ -66,3 +116,5 @@ exclude:
   - .DS_Store
   - .bundle
   - .github
+  - .al-folio-overrides.yml
+  - al-folio-upgrade-report.md

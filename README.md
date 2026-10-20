@@ -1,6 +1,6 @@
 # CAS ZJU
 
-Website of the Critical Algorithms Studies Cluster at Zhejiang University, built with Jekyll and [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/).
+Website of the Critical Algorithms Studies Cluster at Zhejiang University, built with Jekyll and [al-folio](https://github.com/alshedivat/al-folio). It uses the released `al_folio_core` 1.0.15 runtime, with al-folio navigation, typography, light/dark mode, and image galleries.
 
 ## Local preview
 
@@ -15,23 +15,36 @@ bundle exec jekyll serve
 Open http://127.0.0.1:4000. On a Mac with Homebrew Ruby 3.3, prepend `/opt/homebrew/opt/ruby@3.3/bin` to `PATH` if the system Ruby is selected.
 
 ```sh
-bundle exec jekyll build --strict_front_matter
+JEKYLL_ENV=production bundle exec jekyll build --strict_front_matter
 python3 scripts/check_site.py
+bundle exec al-folio upgrade audit
 ```
 
 ## Editing content
 
-- `_people/*.md`: one member per file, including profile links, research interests, and a short biography. `person_id` connects the profile to works.
-- `_data/works.yml`: selected publications, bibliographic details, member IDs, publication type, and a short explanation of relevance. `_data/work_themes.yml` defines the page sections.
-- `_data/events.yml`: event titles, dates as printed, original image paths, and thumbnail paths. The five specified meetup posters use `series: meetup`.
-- `resources/posters/`: untouched full-resolution originals. `assets/images/posters/` contains resized WebP previews, displayed without cropping.
-- `_data/navigation.yml`: header navigation. `assets/css/cluster.css`: local styling layered over Minimal Mistakes.
-- `docs/research-notes.md`: research scope, sources, screening decisions, and uncertainties behind the selected works.
+- `_people/*.md`: names, biographies, research interests, external profiles, and portrait paths and source credits. `person_id` connects each researcher to selected works.
+- `assets/images/people/`: locally stored researcher portraits. `docs/portrait-sources.md` records the verified profile and original image URLs. Photo credits also appear on each profile page.
+- `_data/works.yml`: selected publications, bibliographic details, member IDs, publication type, and relevance to the cluster. `_data/work_themes.yml` defines the page sections.
+- `_data/events.yml`: event titles, dates as printed, original images, and previews. The five requested meetup posters use `series: meetup`.
+- `resources/posters/`: untouched full-resolution originals. `assets/images/posters/` contains WebP previews, displayed without cropping. Clicking a preview opens al-folio's gallery; the separate “Open poster” link opens the original file.
+- Navigation is controlled by `nav: true` and `nav_order` in the front matter of the five main pages.
+- `_sass/_cluster.scss`: site-owned people, works, and event components, using al-folio's color tokens for both themes. `assets/css/main.scss` retains the core imports and adds this partial. `.al-folio-overrides.yml` records that intentional override for future upgrades.
+- `docs/research-notes.md`: publication screening scope, sources, and uncertainties. The original member resource remains in `resources/person/persons.md`.
 
-The original member resource is retained in `resources/person/persons.md`. Source resources and uncommitted content supplied with this task have been preserved.
+`_plugins/style_cache.rb` includes local Sass in the stylesheet fingerprint so styling updates refresh browser caches.
 
-## GitHub Pages
+Theme layouts, includes, and JavaScript are supplied by the pinned gems rather than copied into this repository. `jekyll-cache-bust` must load before `al_folio_core` in the Gemfile and plugin list so the theme's asset fallback is installed.
 
-`.github/workflows/pages.yml` builds on pull requests and builds/deploys on pushes to `main` or `master`. In the repository's **Settings → Pages**, set the source to **GitHub Actions** before deployment. This uses Jekyll 4 and the theme gem rather than GitHub's older managed Jekyll environment. No repository setting is changed by these files alone.
+## GitHub Pages deployment
 
-The site URL is `https://cas-zju.github.io`; update `url` and `baseurl` in `_config.yml` if the hosting destination changes. Internal links use `relative_url`.
+**Use GitHub Actions as the Pages source.** al-folio needs gems that the managed `github-pages` builder does not install. This site intentionally uses Jekyll 4.4 and has no `github-pages`, Minimal Mistakes, or remote-theme dependency.
+
+1. In the repository's **Settings → Pages → Build and deployment → Source**, select **GitHub Actions**.
+2. Commit and push the migration files together, including `Gemfile`, `Gemfile.lock`, `_config.yml`, layouts, Sass, and portrait assets.
+3. `.github/workflows/pages.yml` installs the locked gems, builds the site, checks its internal links and content coverage, then deploys `_site` to Pages. Pull requests build and check without deploying.
+
+Do not select **Deploy from a branch** for this source repository: that invokes the restricted managed builder and can repeat the missing-theme error. The files here cannot change the repository's Pages setting themselves.
+
+The public URL is `https://cas-zju.github.io`. Update `url` and `baseurl` in `_config.yml` if the hosting destination changes. Internal links use `relative_url`.
+
+After changing al-folio versions, run `bundle exec al-folio upgrade overrides audit`, review any reported diff, and acknowledge reconciled overrides with the upgrade CLI.

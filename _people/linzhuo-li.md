@@ -12,6 +12,11 @@ topics:
 - AI & measurement
 faculty_url: http://sociology.zju.edu.cn/index.php/Teacher/e_details.html?id=80&tid=19&sid=2
 website: https://linzhuolisoc.github.io/
+portrait: /assets/images/people/linzhuo-li.png
+portrait_width: 696
+portrait_height: 692
+portrait_source: https://linzhuolisoc.github.io/
+portrait_source_label: Personal website
 ---
 
 His research brings network analysis and machine learning into conversation with questions about scientific knowledge. Work relevant to the cluster examines the use of AI knowledge and the reliability of language models as research instruments.

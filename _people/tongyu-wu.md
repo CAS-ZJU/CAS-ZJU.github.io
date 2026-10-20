@@ -11,6 +11,11 @@ topics:
 - Technology industries
 - Gender
 faculty_url: http://sociology.zju.edu.cn/index.php/Teacher/e_details.html?id=55&tid=19&sid=2
+portrait: /assets/images/people/tongyu-wu.jpg
+portrait_width: 300
+portrait_height: 300
+portrait_source: https://baccs.org/082-play-to-submission/
+portrait_source_label: Bay Area Chinese Culture Salon
 ---
 
 Her work connects the labor process, workplace culture, and inequality. Research on software development and data annotation examines how organizational arrangements shape control, agency, and inclusion in the digital economy.

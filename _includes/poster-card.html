@@ -1,5 +1,5 @@
 <figure class="poster-card">
-  <a class="poster-link" href="{{ include.event.original | relative_url | uri_escape }}" aria-label="Open original poster: {{ include.event.title | escape }}">
+  <a class="poster-link" data-lightbox="events" data-title="{{ include.event.title | escape }}" href="{{ include.event.original | relative_url | uri_escape }}" aria-label="Open original poster: {{ include.event.title | escape }}">
     <img src="{{ include.event.thumbnail | relative_url }}" alt="Event poster: {{ include.event.title | escape }}" width="{{ include.event.width }}" height="{{ include.event.height }}" loading="lazy" decoding="async">
   </a>
   <figcaption>

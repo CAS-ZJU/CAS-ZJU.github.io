@@ -1,4 +1,4 @@
-name: Build and deploy Jekyll site
+name: Build and deploy al-folio site
 
 on:
   push:

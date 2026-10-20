@@ -1,7 +1,9 @@
 ---
-layout: single
+layout: page
 title: Manifesto
 permalink: /manifesto/
+nav: true
+nav_order: 4
 ---
 
 <p class="eyebrow">A collective starting point / 2025</p>
@@ -12,7 +14,7 @@ Our manifesto asks how academic researchers can understand and engage with algor
 
 Bolun Zhang, Yang Shen, Linzhuo Li, Yu Ji, Di Wu, Tongyu Wu, and Lianghao Dai.
 
-[Read the manifesto on arXiv](https://arxiv.org/abs/2504.16546){: .btn .btn--primary}
-[Download the PDF](https://arxiv.org/pdf/2504.16546){: .btn .btn--inverse}
+[Read the manifesto on arXiv](https://arxiv.org/abs/2504.16546){: .cluster-button}
+[Download the PDF](https://arxiv.org/pdf/2504.16546){: .cluster-button .secondary}
 
 *Preprint, submitted April 23, 2025. arXiv:2504.16546.*
